@@ -1,0 +1,391 @@
+@font-face {
+    font-family: Karla;
+    src: url(fonts/Karla-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: LuxuriousRoman;
+    src: url(fonts/LuxuriousRoman-Regular.ttf);
+}
+@font-face {
+    font-family: KarlaBoldItalic;
+    src: url(fonts/Karla-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: KarlaLightItalic;
+    src: url(fonts/Karla-LightItalic.ttf);
+}
+@font-face {
+    font-family: KarlaSemiBoldItalic;
+    src: url(fonts/Karla-SemiBoldItalic.ttf);
+}
+
+
+body
+{
+    background-color: #25112A;
+    overflow-x: hidden;
+}
+
+.display-style
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-section
+{
+    width:100vw;
+    height: 100vh;
+
+
+    background: url("images/mainimage.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.nav-section
+{
+    background-color: #25112A;
+}
+
+.page-logo
+{
+    width: 40px;
+    height: 40px;
+}
+
+.btn-hamburger
+{
+    border: 2px solid white;
+    background-color: black;
+    opacity: 0.4;
+}
+
+.main-textcontent
+{
+    line-height: 24px;
+    vertical-align: baseline;
+    font-weight: 400;
+    font-family: LuxuriousRoman, "sans-serif";
+    color: white;
+    word-spacing: 5px;
+}
+
+.name-tag
+{
+    font-size: 50px;
+}
+
+.section-block
+{
+    margin-top: 200px;
+    height: 100%;
+    display: block;
+}
+
+
+.section-heading
+{
+    font-weight: 400;
+    font-family: LuxuriousRoman, "sans-serif";
+    color: #FA6A61;
+    word-spacing: 5px;
+    font-size: 50px;
+}
+
+.section-text
+{
+    font-weight: 200;
+    font-family: KarlaLightItalic, "sans-serif";
+    color: white;
+    word-spacing: 5px;
+    font-size: 20px;
+}
+
+.nav-text
+{
+    font-family: KarlaSemiBoldItalic, "sans-serif";
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.nav-text:hover
+{
+    border-bottom: 2px outset #FA6A61;
+}
+
+.aboutme-description
+{
+    word-wrap: wrap;
+}
+
+.aboutme-image
+{
+    height: 2em;
+    width: 2em;
+}
+
+.btn-resume
+{
+    color: #25112A;
+    background-color: rgb(180, 155, 155);
+    border-radius: 10px;
+    width: 100px;
+    height: 60px;
+    font-family: bold;
+    font-size: 20px;
+}
+
+.btn-resume:hover
+{
+    background-color: #25112A;
+    color: #FA6A61;
+    /* color: rgb(180, 155, 155); */
+    border: 3px solid white;
+}
+
+.company-name
+{
+    font-weight: 200;
+    font-family: KarlaLightItalic, "sans-serif";
+    color: #FA6A61;
+    word-spacing: 5px;
+    font-size:20px;
+    position: relative;
+    height: 40px;
+}
+
+
+.company-name::before
+{
+    position: absolute;
+    content: '';
+    top: 100%;
+    height: 2px;
+    width: 350px;
+    left: 0;
+    right: 0;
+    background: #fff;
+}
+
+.experience-card
+{
+    background-color: transparent;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.skill
+{
+    width:90%;
+    background-color: white;
+    border-radius: 10px;
+    color: #322048;    
+    font-weight: 500;
+}
+
+.skill-itemheader
+{
+    width: 100%;    
+    font-weight: 500;
+    font-family: KarlaSemiBoldItalic;
+    text-align: center;
+}
+
+.skill-itemvalue
+{
+    font-family: Karla;
+    font-size: 20px;
+}
+
+.certificate-card .card-header
+{
+    background-color: white;
+}
+
+
+.certificate-card .card-footer
+{
+    font-family: Karla;
+    font-size: 20px;
+    text-decoration: none;
+    color: #322048; 
+    cursor: pointer;   
+}
+
+.certificate-card .card-footer:hover
+{
+    text-decoration: none;
+    color: #FA6A61;
+}
+
+#contact
+{
+    height: 90vh;    
+}
+
+.socialmedia-list li
+{
+    list-style-type: none;
+    width: 50px;
+    height: 50px;
+    padding-top: -10px;
+}
+
+.socialmedia-list
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.socialmedia-list li:hover
+{
+    list-style-type: none;
+    width: 50px;
+    height: 50px;
+}
+
+.icon
+{
+    color: #FA6A61;
+}
+
+.icon:hover
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+.copywrite
+{
+    color: white;
+    padding-bottom: 30px;
+    padding-left: 10px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/ opacity */
+ 
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+   
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: rgb(236, 135, 135);
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+@media screen and (max-width: 768px) and (max-height: 768px)
+{   
+    .section-block
+    {
+        height: 100%;
+        margin-top: 20px;
+    }
+    .experience-text
+    {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .company-name::after
+    {
+        margin-left: 15px;
+    }
+    .section-heading
+    {
+        margin-left: 10px;
+    }
+    .skill
+    {
+        width: 100%;
+        margin-left: 5px;
+    }
+    #contact
+    {
+        height: 100vh;    
+    }
+    .modal-content
+    {
+        width: 100%;
+    }
+}
+
+@media screen and (max-height: 500px) and (max-width: 500px)
+{
+    .home-section
+    {
+        min-height: 200px;
+    }
+    .main-textcontent
+    {
+        font-size: 5px;
+    }
+
+    .section-block
+    {
+        height: 100%;
+    }
+
+    .experience-card
+    {
+        min-height: 600px; 
+        width: 100%;
+        font-size: 15px;
+    }
+    .company-name
+    {
+        font-size: 15px;
+        word-wrap: break-word;
+    }
+}
